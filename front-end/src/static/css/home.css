@@ -1,0 +1,10 @@
+.home-avatar {
+    height: 300px;
+    width: 300px;
+}
+
+.home-img{
+    background-image: url('../img/blob2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

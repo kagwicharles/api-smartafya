@@ -1,0 +1,12 @@
+.api-cont {
+    height: calc(100vh - 55px);
+}
+
+.title-content {
+    color: #2E7D32;
+}
+
+.scroll-effect {
+    max-height: calc(100vh - 70px);
+    overflow: auto;
+}

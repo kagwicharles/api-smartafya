@@ -1,0 +1,44 @@
+body {
+  background-color: "#fafafa";
+  font-family: "RobotoRegular";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: local("RobotoRegular"),
+    url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoBlack";
+  src: local("RobotoBlack"),
+    url("./fonts/Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  src: local("RobotoMedium"),
+    url("./fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MulishBlack";
+  src: local("MulishBlack"),
+    url("./fonts/Mulish/Mulish-Black.ttf") format("truetype");
+  font-weight: normal;
+}
+
+#btnContainer .active {
+  border-bottom: 3px solid #F8F9FA;
+  color: #d4eee3 !important;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
