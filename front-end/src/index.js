@@ -1,3 +1,4 @@
+import WebFont from 'webfontloader';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
@@ -6,13 +7,16 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 
-import './fonts/Roboto/Roboto-Regular.ttf';
-import './fonts/Roboto/Roboto-Black.ttf';
-import './fonts/Roboto/Roboto-Medium.ttf';
-import './fonts/Mulish/Mulish-Black.ttf';
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
+
+WebFont.load({
+  custom: {
+    families: ['RobotoRegular', 'RobotoBlack',
+      'RobotoMedium', 'MulishBlack'],
+  },
+});
+
 
 ReactDOM.render(
   <React.StrictMode>
