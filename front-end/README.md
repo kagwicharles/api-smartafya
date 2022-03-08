@@ -1,1 +1,0 @@
-## Smart Afya API
