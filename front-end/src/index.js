@@ -6,6 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 
+import './fonts/Roboto/Roboto-Regular.ttf';
+import './fonts/Roboto/Roboto-Black.ttf';
+import './fonts/Roboto/Roboto-Medium.ttf';
+import './fonts/Mulish/Mulish-Black.ttf';
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
