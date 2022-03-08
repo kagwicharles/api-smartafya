@@ -1,6 +1,11 @@
 .nav-link {
+<<<<<<< HEAD
     margin-left: 12px;
     margin-right: 12px;
+=======
+    margin-left: 15px;
+    margin-right: 15px;
+>>>>>>> b58918b (initial deploy)
 }
 
 .ripple:hover {

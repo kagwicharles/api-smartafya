@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import WebFont from 'webfontloader';
+=======
+>>>>>>> b58918b (initial deploy)
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
@@ -10,6 +13,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
+<<<<<<< HEAD
 WebFont.load({
   custom: {
     families: ['RobotoRegular', 'RobotoBlack',
@@ -18,6 +22,8 @@ WebFont.load({
 });
 
 
+=======
+>>>>>>> b58918b (initial deploy)
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
