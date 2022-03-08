@@ -20,7 +20,7 @@ from gevent.pywsgi import WSGIServer
 from flask_cors import CORS
 
 # Define a flask app
-app = Flask(__name__, static_folder='front-end/build', static_url_path='/')
+app = Flask(__name__, static_folder='front-end/build', static_url_path='')
 # CORS(app)
 
 # Model saved with Keras model.save()
@@ -40,10 +40,9 @@ def predictDisease(img_path, model):
     return preds
 
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def catch_all(path):
-    return app.send_static_file('index.html')
+@app.route("/", defaults={'path': ''})
+def serve(path):
+    return send_from_directory(app.static_folder, 'index.html')
 
 
 # @app.route('/')
@@ -109,6 +108,7 @@ def upload():
     #    else:
     #        return "Normal"
     # return None
+
 
     # this section is used by gunicorn to serve the app on Heroku
 if __name__ == '__main__':
