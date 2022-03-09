@@ -15,6 +15,7 @@ export function performDiagnosis(file, disease) {
 
     fetch(`https://smartafya2.herokuapp.com/predict?disease=${disease}`, {
         method: 'POST',
+        mode: 'cors',
         body: formData
     })
         .then((response) => response.json())
