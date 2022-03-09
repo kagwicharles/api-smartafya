@@ -21,7 +21,7 @@ from flask_cors import CORS
 
 # Define a flask app
 app = Flask(__name__, static_folder='front-end/build', static_url_path='')
-# CORS(app)
+CORS(app)
 
 # Model saved with Keras model.save()
 MALARIA_MODEL_PATH = 'models/Malaria/malaria_pred_cnn.h5'
