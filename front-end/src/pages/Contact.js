@@ -2,14 +2,13 @@ import { useState } from 'react'
 import { send } from 'emailjs-com'
 import { Button, TextField, Grid, Grow, Stack } from "@mui/material"
 import ContactBg from '../static/img/envelope.svg'
-import CorrectBg from '../static/img/check.jpg'
 
 export default function Contact() {
 
     const [isFormHidden, setFormVisibility] = useState(true)
-    const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID
-    const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID
-    const EMAILJS_USER_ID = process.env.EMAILJS_USER_ID
+    const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID
+    const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    const EMAILJS_USER_ID = process.env.REACT_APP_EMAILJS_USER_ID
 
     const [toSend, setToSend] = useState({
         from_name: '',
@@ -64,9 +63,6 @@ export default function Contact() {
                     >
                         <h1>
                             Thank you for reaching us.</h1>
-
-                        <img style={{ height: 200, width: 200 }}
-                            src={CorrectBg} alt="contact us" />
                     </Stack>
                 </Grid>
                 <Grow in={true} timeout={1000}>
