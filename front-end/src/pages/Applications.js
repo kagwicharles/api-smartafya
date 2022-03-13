@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Fade } from "@mui/material"
+import { Grid, Typography, Button, Fade } from "@mui/material"
 import React, { useEffect, useState } from "react";
 import { Icon } from '@iconify/react'
 import { ToastContainer, Slide, toast } from 'react-toastify';
@@ -110,7 +110,7 @@ export default function Apis() {
     return (
         <Fade in={true} timeout={1000}>
             <div className="container fill-height apis-cont font-face-roboto pt-2">
-                < Box
+                < Grid container
                     sx={{
                         display: 'flex',
                         flexDirection: 'row',
@@ -119,15 +119,18 @@ export default function Apis() {
                     }
                     }>
                     <Icon width='40' height='40' color="#353c47" icon="carbon:application" />
-                    <Typography style={{ marginLeft: '10px' }} variant='h5' >
+                    <Typography style={{
+                        marginLeft: '10px',
+                        marginRight: '10px'
+                    }} variant='h5' >
                         My Applications
                     </Typography>
-                    <Button sx={{
-                        marginLeft: '10px',
-                        ':hover': {
-                            color: '#fff',
-                        },
-                    }}
+                    <Button
+                        sx={{
+                            ':hover': {
+                                color: '#fff',
+                            },
+                        }}
                         variant='contained'
                         onClick={() => {
                             navigate("/applications/create")
@@ -135,23 +138,26 @@ export default function Apis() {
                         startIcon={<Icon icon="bi:plus-lg" />}
                         disableElevation={true}>
                         New Application</Button>
-                </Box >
+                </Grid >
                 <p align="left" className="mt-2 mb-4">
                     An application will help you integrate to our API by generating an api key.</p>
-                <table className="table table-striped table-sm w-75">
-                    <thead>
-                        <tr>
-                            <th scope="#">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col" name="api_key">Api key</th>
-                            <th scope="col">Authorized</th>
-                            <th scope="col">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {appData()}
-                    </tbody>
-                </table>
+                <Grid lg={9}>
+                    <table style={{ overflowX: 'auto' }}
+                        className="table table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="#">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col" name="api_key">Api key</th>
+                                <th scope="col">Authorized</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {appData()}
+                        </tbody>
+                    </table>
+                </Grid>
                 <ToastContainer
                     transition={Slide}
                     toastStyle={{

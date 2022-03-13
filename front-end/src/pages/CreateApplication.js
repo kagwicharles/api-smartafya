@@ -1,4 +1,4 @@
-import { Box, TextField, Button, Typography } from "@mui/material"
+import { Box, Grid, TextField, Button, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, Slide } from 'react-toastify';
 import { notify } from '../utils/util';
@@ -27,12 +27,12 @@ export default function CreateApplication(props) {
 
     return (
         <div className="container d-flex justify-content-center app-cont">
-            <Box className="fill-height"
+            <Grid xs={12} sm={12} lg={6}
+                className="fill-height"
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'center',
-                    width: "40%"
+                    justifyContent: 'center'
                 }}>
                 <Typography variant="h5" alignSelf="start">
                     Create an application</Typography>
@@ -86,7 +86,7 @@ export default function CreateApplication(props) {
                             Cancel</Button>
                     </Box>
                 </form>
-            </Box>
+            </Grid>
             <ToastContainer
                 transition={Slide}
                 toastStyle={{

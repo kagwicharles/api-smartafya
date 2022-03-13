@@ -17,8 +17,17 @@
   color: #61dafb;
 }
 
-.fill-height{
-  height: calc(100vh - 70px);
+@media only screen and (min-width: 768px) {
+  .fill-height {
+    height: calc(100vh - 64px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .remove-view {
+    height: 0;
+    width: 0;
+  }
 }
 
 ::-webkit-scrollbar {

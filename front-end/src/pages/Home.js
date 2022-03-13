@@ -21,18 +21,22 @@ export default function Home() {
 
     return (
         <div>
-            <DemoDialog open={open} onClose={handleClose}/>
+            <DemoDialog open={open} onClose={handleClose} />
             <Slide direction='up' in={true} timeout={1000}>
                 <Grid container
                     className='container fill-height align-items-center'>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} lg={6} sm={12} md={12}>
                         <Stack spacing={2} justifyContent='center'>
                             <h1 align='left'>
                                 Accurate predictions for Malaria, Pneumonia and Covid19.
                             </h1>
                             <Typography variant="p"
                                 align='left'
-                                style={{ fontFamily: "sans-serif" }}>
+                                style={{
+                                    fontFamily: "sans-serif",
+                                    maxWidth: "450px",
+                                    textOverflow: "ellipsis"
+                                }}>
                                 Our APIs are designed to scale and are available on request by client applications.
                                 All you need to do is send an image to our service.
                             </Typography>
@@ -59,7 +63,7 @@ export default function Home() {
                             </Box>
                         </Stack>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={12} lg={6} sm={12} md={12}>
                         <img className='fill-height'
                             src={MediLogo} alt="Medi Logo" />
                     </Grid>

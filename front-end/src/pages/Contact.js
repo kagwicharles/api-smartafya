@@ -45,12 +45,14 @@ export default function Contact() {
 
     return (
         <div className="container font-face-roboto">
-            <Grid
+            <Grid container
                 sx={{
                     display: "flex",
                     flexDirection: "row"
                 }}>
-                <Grid item xs={8} className='fill-height p-4'
+                <Grid item
+                    lg={8}
+                    className='p-4 fill-height remove-view'
                     display='flex'
                     justifyContent='center'
                 >
@@ -65,11 +67,14 @@ export default function Contact() {
                             Thank you for reaching us.</h1>
                     </Stack>
                 </Grid>
-                <Grow in={true} timeout={1000}>
-                    <Grid item xs={4}>
-                        <h1
-                            style={{ marginTop: '50px' }}
-                            align="left">Get In Touch</h1>
+                <Grid item
+                    lg={4} sm={12} xs={12} md={4}
+                >
+                    <h1
+                        style={{ marginTop: '50px' }}
+                        align="left">Get In Touch</h1>
+                    <Grow in={true} timeout={1000}>
+
                         <Stack id="contact-form"
                             className="contact-form mt-4 d-flex flex-column mb-3"
                             component="form"
@@ -126,8 +131,8 @@ export default function Contact() {
                                 Send Message
                             </Button>
                         </Stack>
-                    </Grid>
-                </Grow>
+                    </Grow>
+                </Grid>
             </Grid>
         </div>
     )

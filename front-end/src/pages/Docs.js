@@ -10,7 +10,7 @@ export default function Docs() {
             <Grid container className="flex-section">
                 <Grid
                     item
-                    xs={4}
+                    xs={12} lg={4} sm={12}
                     className={"flex-col-scroll pt-2"}
                 >
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -44,11 +44,11 @@ export default function Docs() {
                 </Grid>
                 <Grid
                     item
-                    xs={8}
+                    xs={12} lg={5} sm={12}
                     className={"flex-col-scroll"}
                 >
 
-                    <Box className='scroll-effect pb-2' sx={{ width: '60%' }} style={{ paddingTop: '40px' }}>
+                    <Box className='scroll-effect pb-2' style={{ paddingTop: '40px' }}>
 
                         <Fade in={true} timeout={1000}>
                             <Box>
