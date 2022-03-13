@@ -141,9 +141,10 @@ export default function Apis() {
                 </Grid >
                 <p align="left" className="mt-2 mb-4">
                     An application will help you integrate to our API by generating an api key.</p>
-                <Grid lg={9}>
+                <Grid lg={9} sm={12} xs={12}
+                    className="table-responsive">
                     <table style={{ overflowX: 'auto' }}
-                        className="table table-striped table-responsive">
+                        className="table table-striped">
                         <thead>
                             <tr>
                                 <th scope="#">#</th>
