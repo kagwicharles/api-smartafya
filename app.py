@@ -25,9 +25,11 @@ CORS(app)
 
 # Model saved with Keras model.save()
 MALARIA_MODEL_PATH = 'models/Malaria/malaria_pred_cnn.h5'
+PNEUMONIA_MODEL_PATH = 'models/Pneumonia/pneumonia_pred_cnn.h5'
 
 # Load your trained model
 malaria_model = load_model(MALARIA_MODEL_PATH)
+pneumonia_model = load_model(PNEUMONIA_MODEL_PATH)
 # model._make_predict_function()          # Necessary to make everything ready to run on the GPU ahead of time
 print('Model loaded. Start serving...')
 
@@ -77,6 +79,7 @@ def upload():
             preds = predictDisease(file_path, malaria_model)
         elif (disease_type == '2'):
             print("Pneumonia")
+            preds = predictDisease(file_path, pneumonia_model)
         elif (disease_type == '3'):
             print("Covid19")
 
