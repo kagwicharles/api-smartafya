@@ -36,7 +36,8 @@ export default function CreateApplication(props) {
                 }}>
                 <Typography variant="h5" alignSelf="start">
                     Create an application</Typography>
-                <Typography variant="p" alignSelf="start">
+                <Typography variant="p" alignSelf="start"
+                    sx={{ marginLeft: 1 }}>
                     Fill in the form below to generate a key</Typography>
                 <form className="mt-4" onSubmit={handleSubmit}>
                     <TextField
