@@ -33,7 +33,6 @@ export default function Home() {
                             <Typography variant="p"
                                 align='left'
                                 style={{
-                                    fontFamily: "sans-serif",
                                     maxWidth: "450px",
                                     textOverflow: "ellipsis"
                                 }}>
