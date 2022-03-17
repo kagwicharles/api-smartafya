@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 import os
 
 import firebase_admin
@@ -5,7 +6,9 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 # Read firebase database url from .env file
-databaseUrl = os.environ.get('FIREBASE_DATABASE_URL')
+load_dotenv()
+databaseUrl = os.getenv('FIREBASE_DATABASE_URL')
+print(databaseUrl)
 
 # Fetch the service account key JSON file contents
 cred = credentials.Certificate('secret_key.json')
@@ -16,6 +19,7 @@ firebase_admin.initialize_app(cred, {
 })
 
 db = firestore.client()
+
 
 def checkApiKeyValidity(userEmail, apiKey):
     apiKeys_ref = db.collection('api_keys').document(
