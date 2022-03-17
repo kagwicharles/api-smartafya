@@ -13,9 +13,7 @@ export function performDiagnosis(file, disease) {
     $('.loader').show();
     const message = document.getElementById('diagnosisResults');
 
-    fetch(`https://smartafya2.herokuapp.com/predict?
-    disease=${disease}&user-email=ckagwi8@gmail.com
-    &api-key=wXcxQIQNoB6UNAHYeokEz`, {
+    fetch(`https://smartafya2.herokuapp.com/predict?disease=${disease}&user-email=ckagwi8@gmail.com&api-key=wXcxQIQNoB6UNAHYeokEz`, {
         method: 'POST',
         body: formData
     })
