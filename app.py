@@ -1,23 +1,20 @@
 from __future__ import division, print_function
 # coding=utf-8
-import sys
 import os
-import glob
-import re
-from xml.etree.ElementPath import prepare_descendant
 from black import err
 import numpy as np
 
 # Keras
-from keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from keras.models import load_model
 from keras.preprocessing import image
 
 # Flask utils
-from flask import Flask, jsonify, redirect, send_from_directory, url_for, request, render_template
+from flask import Flask, jsonify, send_from_directory, request
 from werkzeug.utils import secure_filename
-from gevent.pywsgi import WSGIServer
 from flask_cors import CORS
+
+# Api key authentication module
+from modules import authenticate
 
 # Define a flask app
 app = Flask(__name__, static_folder='front-end/build', static_url_path='')
@@ -51,11 +48,6 @@ def serve(path):
 def not_found(e):
     return send_from_directory(app.static_folder, 'index.html')
 
-# @app.route('/')
-# def index():
-#     # Main page
-#     return app.send_static_file('index.html')
-
 
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
@@ -66,6 +58,20 @@ def upload():
         # Get disease type to diagnose
         disease_type = request.args.get("disease")
         print("DISEASE: "+disease_type)
+
+        # Get user email from request
+        user_email = request.args.get("user-email")
+
+        # Get Api key from request
+        api_key = request.args.get("api-key")
+        api_key_validity = authenticate.checkApiKeyValidity(
+            user_email, api_key)
+
+        if user_email == "" or api_key == "":
+            return jsonify({'results': "X000"})
+
+        if not api_key_validity:
+            return jsonify({'results': "X001"})
 
         print("Received file from client...", f)
         # Save the file to ./uploads
@@ -98,25 +104,16 @@ def upload():
         print(labels)
         final = np.array(labels)
 
-        # pred_result = ""
-
         if final[0][0] == 0:
             pred_result = "Infected"
         elif final[0][0] == 1:
             pred_result = "Normal"
-        # else:
-        #   pred_result = "Invalid image"
 
         response = jsonify({'results': pred_result})
     return response
 
-    #    if final[0][0]==1:
-    #       return "Pneumonia"
-    #    else:
-    #        return "Normal"
-    # return None
 
-    # this section is used by gunicorn to serve the app on Heroku
+# this section is used by gunicorn to serve the app on Heroku
 if __name__ == '__main__':
     app.run()
     # uncomment this section to serve the app locally with gevent at:  http://localhost:5000
