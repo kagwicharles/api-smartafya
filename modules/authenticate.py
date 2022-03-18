@@ -8,7 +8,6 @@ from firebase_admin import firestore
 # Read firebase database url from .env file
 load_dotenv()
 databaseUrl = os.getenv('FIREBASE_DATABASE_URL')
-print(databaseUrl)
 
 # Fetch the service account key JSON file contents
 cred = credentials.Certificate('secret_key.json')
