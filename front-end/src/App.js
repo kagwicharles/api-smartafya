@@ -22,8 +22,8 @@ export default function App() {
       button: {
         textTransform: "none",
         fontSize: 16
-      }
-    },
+      },
+    }
   });
 
   return (

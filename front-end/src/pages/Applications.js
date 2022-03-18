@@ -109,7 +109,7 @@ export default function Apis() {
 
     return (
         <Fade in={true} timeout={1000}>
-            <div className="container fill-height apis-cont font-face-roboto pt-2">
+            <div className="container fill-height apis-cont pt-2">
                 < Grid container
                     sx={{
                         display: 'flex',

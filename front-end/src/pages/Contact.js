@@ -44,7 +44,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="container font-face-roboto">
+        <div className="container">
             <Grid container
                 sx={{
                     display: "flex",
@@ -70,9 +70,12 @@ export default function Contact() {
                 <Grid item
                     lg={4} sm={12} xs={12} md={4}
                 >
-                    <h1
-                        style={{ marginTop: '50px' }}
-                        align="left">Get In Touch</h1>
+                    <h2
+                        style={{
+                            marginTop: '50px',
+                            fontFamily: "RobotoBlack"
+                        }}
+                        align="left">Get In Touch</h2>
                     <Grow in={true} timeout={1000}>
 
                         <Stack id="contact-form"

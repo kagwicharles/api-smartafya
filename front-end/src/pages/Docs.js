@@ -6,7 +6,7 @@ import '../static/css/docs.css'
 
 export default function Docs() {
     return (
-        <div className='container font-face-roboto'>
+        <div className='container'>
             <Grid container className="flex-section">
                 <Grid
                     item
@@ -15,10 +15,13 @@ export default function Docs() {
                 >
                     <Box sx={{ display: 'flex', alignItems: 'center' }}>
                         <Icon width='40' height='40' color="#353c47" icon="bi:stack" />
-                        <Typography variant='h5'
-                            className='title-content '
+                        <Typography variant="h6"
+                            className='title-content'
                             align='left'
-                            sx={{ marginLeft: '20px' }}
+                            sx={{
+                                marginLeft: '20px',
+                                fontFamily: "RobotoBlack"
+                            }}
                         >
                             Documentation
                         </Typography>
@@ -31,13 +34,16 @@ export default function Docs() {
                         flexDirection: 'column',
                     }}>
 
-                        <Typography variant='h6' align='left'>
+                        <Typography
+                            variant='h6' align='left'>
                             <Link href='#get-started' underline='hover'>Get Started</Link>
                         </Typography>
-                        <Typography variant='h6' align='left' className='mt-4'>
+                        <Typography
+                            variant='h6' align='left' className='mt-4'>
                             <Link href='#predict-xray' underline='hover'>Predict X-ray</Link>
                         </Typography>
-                        <Typography variant='h6' align='left' className='mt-4'>
+                        <Typography
+                            variant='h6' align='left' className='mt-4'>
                             <Link href='#error' underline='hover'>Errors</Link>
                         </Typography>
                     </Box>
@@ -52,7 +58,9 @@ export default function Docs() {
 
                         <Fade in={true} timeout={1000}>
                             <Box>
-                                <Typography id='get-started' variant='h4' align='left' className='title-content'>
+                                <Typography id='get-started' variant='h5'
+                                    align='left' className='title-content'
+                                    sx={{ fontFamily: "RobotoBlack" }}>
                                     Get Started
                                 </Typography>
                                 <p style={{ textAlign: 'left', paddingTop: '20px' }}>
@@ -67,8 +75,11 @@ export default function Docs() {
 
                         <Fade in={true} timeout={1000}>
                             <Box>
-                                <Typography id='predict-xray' variant='h4' align='left' className='title-content'
-                                    style={{ marginTop: '40px' }}
+                                <Typography id='predict-xray' variant='h5' align='left' className='title-content'
+                                    style={{
+                                        marginTop: '40px',
+                                        fontFamily: "RobotoBlack"
+                                    }}
                                 >
                                     Predict X-ray/Microscopic cells
                                 </Typography>
@@ -107,8 +118,11 @@ export default function Docs() {
 
                         <Fade in={true} timeout={1000}>
                             <Box>
-                                <Typography id='error' variant='h4' align='left' className='title-content'
-                                    style={{ marginTop: '40px' }}
+                                <Typography id='error' variant='h5' align='left' className='title-content'
+                                    style={{
+                                        marginTop: '40px',
+                                        fontFamily: "RobotoBlack"
+                                    }}
                                 >
                                     Errors
                                 </Typography>

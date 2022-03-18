@@ -20,14 +20,17 @@ export default function Home() {
     };
 
     return (
-        <div>
+        <div style={{
+            backgroundColor: "#F8F9FD"
+        }}>
             <DemoDialog open={open} onClose={handleClose} />
             <Slide direction='up' in={true} timeout={1000}>
                 <Grid container
                     className='container fill-height align-items-center'>
                     <Grid item xs={12} lg={6} sm={12} md={12}>
                         <Stack spacing={2} justifyContent='center'>
-                            <h1 align='left'>
+                            <h1 align='left'
+                                style={{ fontFamily: "RobotoBlack" }}>
                                 Accurate predictions for Malaria, Pneumonia and Covid19.
                             </h1>
                             <Typography variant="p"
