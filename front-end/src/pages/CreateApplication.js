@@ -35,7 +35,7 @@ export default function CreateApplication(props) {
                     justifyContent: 'center'
                 }}>
                 <Typography variant="h5" alignSelf="start">
-                    Create an application</Typography>
+                    Create application</Typography>
                 <Typography variant="p" alignSelf="start"
                     sx={{ marginLeft: 1 }}>
                     Fill in the form below to generate a key</Typography>
