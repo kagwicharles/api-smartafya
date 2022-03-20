@@ -21,7 +21,8 @@ export default function Home() {
 
     return (
         <div style={{
-            backgroundColor: "#F8F9FD"
+            backgroundColor: "#F8F9FD",
+            backgroundSize: "cover"
         }}>
             <DemoDialog open={open} onClose={handleClose} />
             <Slide direction='up' in={true} timeout={1000}>

@@ -14,7 +14,7 @@ from werkzeug.utils import secure_filename
 from flask_cors import CORS
 
 # Api key authentication module
-from modules import authenticate
+from modules import authenticateKey
 
 # Define a flask app
 app = Flask(__name__, static_folder='front-end/build', static_url_path='')
@@ -64,7 +64,7 @@ def upload():
 
         # Get Api key from request
         api_key = request.args.get("api-key")
-        api_key_validity = authenticate.checkApiKeyValidity(
+        api_key_validity = authenticateKey.checkApiKeyValidity(
             user_email, api_key)
 
         if user_email == "" or api_key == "":
