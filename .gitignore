@@ -1,4 +1,3 @@
 lib/
 node_modules
 .env
-secret_key.json
