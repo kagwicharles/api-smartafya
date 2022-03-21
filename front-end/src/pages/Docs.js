@@ -65,7 +65,8 @@ export default function Docs() {
                                 </Typography>
                                 <p style={{ textAlign: 'left', paddingTop: '20px' }}>
                                     The Smart Afya API provides programmatic access to predict
-                                    Chest x-ray scans. Depending on the request you make, the api
+                                    Chest x-ray scans as well as Microscopic red blood cells.
+                                    Depending on the request you make, the api
                                     predicts one of the following cases: Malaria, Pneumonia and Covid19.
                                 </p>
 
@@ -86,7 +87,7 @@ export default function Docs() {
 
                                 <p style={{ textAlign: 'left', marginTop: '20px' }}>
                                     To predict an x-ray/microscopic cell image make a POST call to the following url :
-                                    http://api.smartafya.com/predict
+                                    https://api-smartafya.herokuapp.com/predict
                                 </p>
 
                                 <Typography align='left' color='primary'>QUERY PARAMETERS</Typography>
@@ -108,11 +109,12 @@ export default function Docs() {
                                         <tr>
                                             <td>disease</td>
                                             <td>String</td>
-                                            <td>"malaria", "pneumonia" or "covid19"</td>
+                                            <td>"1" for Malaria, "2" for Pneumonia and "3"
+                                                for Covid19
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
-
                             </Box>
                         </Fade>
 
