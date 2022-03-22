@@ -102,16 +102,21 @@ export default function Docs() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>secret_key</td>
-                                            <td>String</td>
-                                            <td>Your API key</td>
-                                        </tr>
-                                        <tr>
                                             <td>disease</td>
                                             <td>String</td>
                                             <td>"1" for Malaria, "2" for Pneumonia and "3"
                                                 for Covid19
                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td>user-email</td>
+                                            <td>String</td>
+                                            <td>Your Smart Afya registered email</td>
+                                        </tr>
+                                        <tr>
+                                            <td>api-key</td>
+                                            <td>String</td>
+                                            <td>Your API key</td>
                                         </tr>
                                     </tbody>
                                 </table>
