@@ -121,7 +121,7 @@ export default function Docs() {
                                     </tbody>
                                 </table>
 
-                                <Typography align='left' color='primary'>BODY</Typography>
+                                <Typography align='left' color='primary'>REQUEST BODY</Typography>
 
                                 <table className='table'>
                                     <thead>
