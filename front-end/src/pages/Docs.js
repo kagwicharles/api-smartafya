@@ -120,6 +120,25 @@ export default function Docs() {
                                         </tr>
                                     </tbody>
                                 </table>
+
+                                <Typography align='left' color='primary'>BODY</Typography>
+
+                                <table className='table'>
+                                    <thead>
+                                        <tr>
+                                            <th>Field</th>
+                                            <th>Type</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>file</td>
+                                            <td>FormData</td>
+                                            <td>Image file to diagnose</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </Box>
                         </Fade>
 
