@@ -37,10 +37,10 @@ export default function NavAppBar() {
     return (
         <header className='header'
             style={{
-                fontFamily: "RobotoBlack",
+                fontFamily: "RobotoMedium",
             }}>
             <AppBar position="fixed" className="app-bar"
-                elevation={2}
+                elevation={4}
             >
                 {mobileView ? <DisplayMobile /> : displayDesktop()}
             </AppBar >

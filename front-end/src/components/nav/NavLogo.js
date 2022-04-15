@@ -7,8 +7,7 @@ const smartAfyaLogo = (
         underline="none">
         <Typography
             sx={{ fontWeight: "bold" }}
-            className="font-face-roboto-black"
-            variant="h5" component="h1">
+            variant="h4">
             Smart Afya
         </Typography>
     </NavLink>
