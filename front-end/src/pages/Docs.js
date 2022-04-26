@@ -74,7 +74,11 @@ export default function Docs() {
                     className={"flex-col-scroll"}
                 >
 
-                    <Box className='scroll-effect pb-2' style={{ paddingTop: '40px' }}>
+                    <Box
+                        className='scroll-effect pb-2'
+                        style={{ paddingTop: '40px' }}
+                        spacing={4}
+                    >
 
                         <Fade in={true} timeout={1000}>
                             <Grid container
@@ -97,9 +101,10 @@ export default function Docs() {
                                     <p style={{ textAlign: 'left', marginTop: '20px' }}>To use this API, you need an API key. Get an API key <Link href='/applications' underline='hover'>here</Link>.</p>
                                 </Grid>
 
-                                <Grid item lg={5}
+                                <Grid item lg={5} xs={12} sm={12}
                                     display="flex"
                                     className='code-snippet'
+                                    direction="column"
                                 >
                                     <code
                                         style={{ textAlign: "left" }}>
@@ -181,7 +186,7 @@ export default function Docs() {
                                         </tbody>
                                     </table>
                                 </Grid>
-                                <Grid item lg={5}
+                                <Grid item lg={5} xs={12} sm={12}
                                     className='code-snippet'
                                     display="flex"
                                     direction="column"
@@ -198,6 +203,7 @@ export default function Docs() {
                                                 <br />
                                                 <div>
                                                     Request body:
+                                                    <br />
                                                     "file": "Image to diagnose"
                                                 </div>
                                             </div>
@@ -228,7 +234,15 @@ export default function Docs() {
                                         Errors
                                     </Typography>
 
-                                    <p style={{ textAlign: 'left', marginTop: '20px' }}>Smart Afya can produce the following errors.</p>
+                                    <p
+                                        style=
+                                        {{
+                                            textAlign: 'left',
+                                            marginTop: '20px'
+                                        }}
+                                    >
+                                        Smart Afya API can produce the following
+                                        errors if a request sent to the server is not successful.</p>
 
                                     <table className='table'>
                                         <thead>
@@ -249,9 +263,10 @@ export default function Docs() {
                                         </tbody>
                                     </table>
                                 </Grid>
-                                <Grid item lg={5}
+                                <Grid item lg={5} xs={12} sm={12}
                                     className='code-snippet'
                                     display="flex"
+                                    direction="column"
                                 >
                                     <code>
                                         <div style={{ textAlign: "left" }}>
