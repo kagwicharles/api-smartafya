@@ -2,10 +2,21 @@
     height: calc(100vh - 55px);
 }
 
-.title-content {
+.code-snippet {
+    max-width: 300px;
 }
 
 .scroll-effect {
     max-height: calc(100vh - 70px);
     overflow: auto;
+}
+
+
+code,
+pre {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.code-snippet {
+    background-color: aliceblue;
 }
