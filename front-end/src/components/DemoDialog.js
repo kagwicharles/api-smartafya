@@ -79,7 +79,7 @@ export default function DemoDialog(props) {
                         To perform a diagnosis on a medical image, select a disease type
                         from the dropdown below and upload an appropriate image either
                         microscopic cell(Malaria dignosis) or
-                        chest x-ray(Pneumonia or Covid19)
+                        chest x-ray(Pneumonia diagnosis)
                     </DialogContentText>
                     <Stack spacing={1} className="pt-2">
                         <p id="validateText" style={{ color: 'red', display: "none" }}
@@ -90,7 +90,6 @@ export default function DemoDialog(props) {
                                 <option className='dropdown-option' value="select">Select disease</option>
                                 <option className='dropdown-option' value="1">Malaria</option>
                                 <option className='dropdown-option' value="2">Pneumonia</option>
-                                <option className='dropdown-option' value="3">Covid19</option>
                             </select>
                         </div>
                         <form id="upload-file" method="post"

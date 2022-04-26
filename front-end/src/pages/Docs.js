@@ -91,7 +91,7 @@ export default function Docs() {
                                         The Smart Afya API provides programmatic access to predict
                                         Chest x-ray scans as well as Microscopic red blood cells.
                                         Depending on the request you make, the api
-                                        predicts one of the following cases: Malaria, Pneumonia and Covid19.
+                                        predicts one of the following cases: Malaria and Pneumonia.
                                     </p>
 
                                     <p style={{ textAlign: 'left', marginTop: '20px' }}>To use this API, you need an API key. Get an API key <Link href='/applications' underline='hover'>here</Link>.</p>
@@ -146,8 +146,7 @@ export default function Docs() {
                                             <tr>
                                                 <td>disease</td>
                                                 <td>String</td>
-                                                <td>"1" for Malaria, "2" for Pneumonia and "3"
-                                                    for Covid19
+                                                <td>"1" for Malaria and "2" for Pneumonia
                                                 </td>
                                             </tr>
                                             <tr>

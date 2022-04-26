@@ -32,7 +32,7 @@ export default function Home() {
                         <Stack spacing={2} justifyContent='center'>
                             <h1 align='left'
                                 style={{ fontFamily: "RobotoBlack" }}>
-                                Accurate predictions for Malaria, Pneumonia and Covid19.
+                                Accurate predictions for Malaria and Pneumonia.
                             </h1>
                             <Typography variant="p"
                                 align='left'
