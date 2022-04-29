@@ -22,13 +22,13 @@ export default function Home() {
     return (
         <div style={{
             backgroundColor: "#F8F9FD",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
         }}>
             <DemoDialog open={open} onClose={handleClose} />
             <Slide direction='up' in={true} timeout={1000}>
                 <Grid container
                     className='container fill-height align-items-center'>
-                    <Grid item xs={12} lg={6} sm={12} md={12}>
+                    <Grid item xs={12} lg={6} sm={6} md={4}>
                         <Stack spacing={2} justifyContent='center'>
                             <h1 align='left'
                                 style={{ fontFamily: "RobotoBlack" }}>
@@ -66,7 +66,7 @@ export default function Home() {
                             </Box>
                         </Stack>
                     </Grid>
-                    <Grid item xs={12} lg={6} sm={12} md={12}>
+                    <Grid item xs={12} lg={6} sm={6} md={8}>
                         <img className='fill-height'
                             src={MediLogo} alt="Medi Logo" />
                     </Grid>

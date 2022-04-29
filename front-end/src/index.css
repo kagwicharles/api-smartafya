@@ -37,8 +37,7 @@ code {
 }
 
 #btnContainer .active {
-  border-bottom: 3px solid #F8F9FA;
-  color: #d4eee3 !important;
+  border-bottom: 3px solid #d9e2ef;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }

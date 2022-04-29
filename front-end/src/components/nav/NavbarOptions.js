@@ -26,7 +26,7 @@ const getDrawerChoices = () => {
 
 const displayDesktop = () => {
     return (
-        <Toolbar className='toolbar container'>
+        <Toolbar className='toolbar'>
             {smartAfyaLogo}
             <div className="menu-btn">{getMenuButtons()}</div>
             <DisplayUser />
@@ -50,7 +50,6 @@ const DisplayMobile = () => {
             <IconButton
                 {...{
                     edge: "start",
-                    color: "inherit",
                     "aria-label": "menu",
                     "aria-haspopup": "true",
                     onClick: handleDrawerOpen,

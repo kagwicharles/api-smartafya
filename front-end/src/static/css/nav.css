@@ -4,7 +4,8 @@
 }
 
 .ripple:hover {
-    color: #d4eee3 !important;
+    border-bottom: 3px solid #d9e2ef;
+    transition: all ease-in-out .2s;
 }
 
 .header {

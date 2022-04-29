@@ -30,17 +30,13 @@ export default function NavAppBar() {
         }
     }, []);
 
-    const toolbarStyle = {
-        minHeight: '55px',
-    };
-
     return (
         <header className='header'
             style={{
                 fontFamily: "RobotoMedium",
             }}>
-            <AppBar position="fixed" className="app-bar"
-                elevation={4}
+            <AppBar position="fixed" className="app-bar" sx={{ backgroundColor: "#F8F9FD" }}
+                elevation={0}
             >
                 {mobileView ? <DisplayMobile /> : displayDesktop()}
             </AppBar >

@@ -21,14 +21,16 @@ const LoggedOut = () => {
             >
                 Login</Button>
             <Button
-                variant='outlined'
+                variant='contained'
                 className='m-1'
-                color="inherit"
                 href="/register"
-                disableElevation={true} sx={{
+                disableElevation={true}
+                sx={{
+                    backgroundColor: "#041920",
                     textTransform: "none",
                     ':hover': {
-                        color: "white"
+                        color: "white",
+                        backgroundColor: "#041920",
                     },
                     textTransform: "none",
                     fontSize: 16
