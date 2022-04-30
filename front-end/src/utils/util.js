@@ -17,7 +17,7 @@ function generateKey() {
 
 const notify = (message, TYPE) => toast.info(message, {
     position: "bottom-right",
-    autoClose: 4000,
+    autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,

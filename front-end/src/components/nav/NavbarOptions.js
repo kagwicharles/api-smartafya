@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Toolbar, IconButton, Drawer, MenuItem } from '@mui/material';
+import { Toolbar, IconButton, Drawer, MenuItem, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 
@@ -65,6 +65,9 @@ const DisplayMobile = () => {
                 }}
             >
                 <div className="drawerContainer">{getDrawerChoices()}</div>
+                <Box mt={4}>
+                    <DisplayUser />
+                </Box>
             </Drawer>
             <div>{smartAfyaLogo}</div>
         </Toolbar>

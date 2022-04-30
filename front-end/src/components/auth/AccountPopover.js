@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState } from 'react';
 import homeFill from '@iconify/icons-eva/home-fill';
 import personFill from '@iconify/icons-eva/person-fill';
 import settings2Fill from '@iconify/icons-eva/settings-2-fill';
@@ -9,7 +9,6 @@ import { alpha } from '@mui/material/styles';
 import { Button, Box, Divider, MenuItem, Typography, Avatar, IconButton } from '@mui/material';
 
 import MenuPopover from './MenuPopover';
-import account from '../../mocks/account';
 import { logout } from '../../authentication/firebase'
 import { useUserAuth } from "../../authentication/AuthProvider";
 
@@ -19,16 +18,16 @@ const MENU_OPTIONS = [
         icon: homeFill,
         linkTo: '/'
     },
-    {
-        label: 'Profile',
-        icon: personFill,
-        linkTo: '#'
-    },
-    {
-        label: 'Settings',
-        icon: settings2Fill,
-        linkTo: '#'
-    }
+    // {
+    //     label: 'Profile',
+    //     icon: personFill,
+    //     linkTo: '#'
+    // },
+    // {
+    //     label: 'Settings',
+    //     icon: settings2Fill,
+    //     linkTo: '#'
+    // }
 ];
 
 
@@ -77,7 +76,8 @@ export default function AccountPopover() {
                     })
                 }}
             >
-                <Avatar sx={{ backgroundColor: "#00BFBA" }}
+                <Avatar
+                    sx={{ bgcolor: "#2E7D32" }}
                     alt="photoURL">{avatarChar}</Avatar>
             </IconButton>
 

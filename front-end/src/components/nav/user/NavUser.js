@@ -1,4 +1,4 @@
-import { Box, Button, Grow, Slide } from "@mui/material"
+import { Box, Button } from "@mui/material"
 import AccountPopover from "../../auth/AccountPopover"
 
 const LoggedOut = () => {
@@ -10,12 +10,9 @@ const LoggedOut = () => {
                 href="/login"
                 className='m-1'
                 sx={{
-                    textTransform: "none",
                     ':hover': {
                         color: '#fff',
-                    },
-                    textTransform: "none",
-                    fontSize: 16
+                    }
                 }}
                 disableElevation={true}
             >
@@ -25,15 +22,11 @@ const LoggedOut = () => {
                 className='m-1'
                 href="/register"
                 disableElevation={true}
+                color="primary"
                 sx={{
-                    backgroundColor: "#041920",
-                    textTransform: "none",
                     ':hover': {
                         color: "white",
-                        backgroundColor: "#041920",
                     },
-                    textTransform: "none",
-                    fontSize: 16
                 }}>
                 Sign Up</Button>
         </Box>

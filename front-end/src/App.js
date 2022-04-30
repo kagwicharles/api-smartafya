@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import Docs from './pages/Docs'
 import Contact from './pages/Contact'
 import Applications from './pages/Applications';
-
 import Footer from './components/Footer'
 import NavAppBar from './components/nav/NavAppBar'
 import CreateApplication from './pages/CreateApplication';

@@ -1,101 +1,132 @@
-import * as React from 'react';
-import { Button, TextField, Checkbox, Link, Grid, Typography } from '@mui/material'
-import FormControlLabel from '@mui/material/FormControlLabel';
+import React, { useState } from 'react';
+import {
+    Button, TextField,
+    Link, Grid,
+    Typography, Stack,
+    Box
+} from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, Slide, toast } from 'react-toastify';
 import { notify } from '../../utils/util';
+import { TailSpin } from "react-loader-spinner"
 import 'react-toastify/dist/ReactToastify.css';
 
 import { logInWithEmailAndPassword } from '../../authentication/firebase'
+import { PassWordField } from '../CustomElements/UIElements';
 
 export default function Login() {
-    const navigate = useNavigate()
+
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(true);
+    const [password, setPassword] = useState();
+    const [email, setEmail] = useState();
+
+    const handlePasswordChange = (password) => {
+        setPassword(password)
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        // eslint-disable-next-line no-console
-        logInWithEmailAndPassword(data.get('email'), data.get('password')).then(() => {
-            navigate("/applications")
-            notify("Successfully Logged In", toast.TYPE.SUCCESS)
+        setLoading(false);
+        logInWithEmailAndPassword(email, password).then(() => {
+            navigate("/applications");
+            notify("Successfully Logged In", toast.TYPE.SUCCESS);
+        }).catch((error) => {
+            setLoading(true);
+            switch (error.code) {
+                case 'auth/wrong-password':
+                    notify("Wrong password!", toast.TYPE.ERROR);
+                    break;
+                case 'auth/too-many-requests':
+                    notify("Try again later!", toast.TYPE.ERROR);
+                    break;
+                default:
+                    notify("Loginn failed!", toast.TYPE.ERROR);
+                    break;
+            }
         })
     };
 
     return (
         <div>
-            <Grid className="container" justifyContent="center"
+            <Grid container className="container" justifyContent="center"
                 sx={{
                     marginTop: 4,
                     padding: 2,
                     marginBottom: 4
                 }}
             >
-                <Typography sx={{ alignSelf: "flex-start" }} variant="h4" align='left'>
-                    Log in.
-                </Typography>
-                <Grid xs={12} sm={4}
-                    component="form"
-                    onSubmit={handleSubmit}
-                    noValidate
-                    sx={{
-                        mt: 1,
-                        display: 'flex',
-                        flexDirection: 'column'
-                    }}>
-                    <TextField
-                        margin="normal"
-                        required
-                        fullWidth
-                        id="email"
-                        label="Email Address"
-                        name="email"
-                        autoComplete="email"
-                        autoFocus
-                        variant='standard'
-                    />
-                    <TextField
-                        margin="normal"
-                        required
-                        fullWidth
-                        name="password"
-                        label="Password"
-                        type="password"
-                        id="password"
-                        autoComplete="current-password"
-                        variant="standard"
-                    />
-                    <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
-                        label="Remember me"
-                    />
-                    <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        sx={{ mt: 3, mb: 2 }}
-                        disableElevation={true}
-                    >
-                        Log in
-                    </Button>
-                    <Grid container>
-                        <Grid item xs>
-                            <Link href="#" variant="body2">
-                                Forgot password?
-                            </Link>
+                <Stack sx={{ boxShadow: 3, padding: 8 }}>
+
+                    <Typography
+                        sx={{
+                            alignSelf: "flex-start",
+                            fontFamily: "RobotoBlack"
+                        }}
+                        variant="h4"
+                        align='left'>
+                        Log in.
+                    </Typography>
+                    <Stack spacing={1}
+                        component="form"
+                        onSubmit={handleSubmit}
+                        sx={{
+                            mt: 1,
+                            display: 'flex',
+                            flexDirection: 'column'
+                        }}>
+
+                        <TextField
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="email"
+                            label="Email"
+                            name="email"
+                            onChange={(e) => setEmail(e.target.value)}
+                            autoComplete="email"
+                            autoFocus
+                            variant='standard'
+                        />
+                        <PassWordField label="Password"
+                            updatePassword={handlePasswordChange} />
+                        <br />
+                        <br />
+                        {loading ?
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                sx={{ mt: 3, mb: 2, }}
+                                disableElevation={true}
+                            >
+                                Log in
+                            </Button> :
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                            >
+                                <TailSpin color="#00BFFF" height={30} width={30} />
+                            </Box>
+                        }
+                        <Grid container>
+                            <Grid item xs>
+                                <Link href="#" variant="body2">
+                                    Forgot password?
+                                </Link>
+                            </Grid>
+                            <Grid item style={{ marginLeft: '8px' }}>
+                                <Link href="/register" variant="body2">
+                                    {"Don't have an account? Sign Up"}
+                                </Link>
+                            </Grid>
                         </Grid>
-                        <Grid item style={{ marginLeft: '8px' }}>
-                            <Link href="/register" variant="body2">
-                                {"Don't have an account? Sign Up"}
-                            </Link>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </Grid>
+                    </Stack>
+                </Stack>
+            </Grid >
             <ToastContainer
                 transition={Slide}
-                toastStyle={{
-                    backgroundColor: "#fafafa",
-                }} />
+            />
         </div>
     );
 }

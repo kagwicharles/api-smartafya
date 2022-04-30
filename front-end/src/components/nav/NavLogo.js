@@ -7,8 +7,8 @@ const smartAfyaLogo = (
         underline="none">
         <Typography
             variant="h4"
-            style={{ fontWeight: "bold", color: "#041920" }}>
-            Afya API.
+            style={{ fontWeight: "bold", color: "#fafafa" }}>
+            SMART AFYA
         </Typography>
     </NavLink>
 );

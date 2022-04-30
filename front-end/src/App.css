@@ -49,3 +49,7 @@
 .font-face-mulish-black {
   font-family: "MulishBlack";
 }
+
+#password-match {
+  display: none;
+}

@@ -14,7 +14,8 @@ export default function Contact() {
         from_name: '',
         to_name: '',
         message: '',
-        subject: ''
+        subject: '',
+        email: ''
     })
 
     const clearForm = () => {
@@ -45,13 +46,13 @@ export default function Contact() {
 
     return (
         <div className="container">
-            <Grid container
+            <Grid container spacing={2}
                 sx={{
                     display: "flex",
                     flexDirection: "row"
                 }}>
                 <Grid item
-                    lg={8}
+                    lg={8} md={6} sm={0}
                     className='p-4 fill-height remove-view'
                     display='flex'
                     justifyContent='center'
@@ -68,7 +69,7 @@ export default function Contact() {
                     </Stack>
                 </Grid>
                 <Grid item
-                    lg={4} sm={12} xs={12} md={4}
+                    lg={4} sm={12} xs={12} md={6}
                 >
                     <h2
                         style={{
@@ -86,17 +87,18 @@ export default function Contact() {
                             <TextField
                                 id="user_name"
                                 name="user_name"
-                                placeholder="Enter your name"
-                                label="Name"
+                                label="Email"
+                                placeholder="Enter your email"
                                 variant="outlined"
                                 required
-                                type="text"
+                                type="email"
                                 fullWidth
                                 inputProps={{
                                     maxLength: 30
                                 }}
                                 onChange={handleChange}
                             />
+
                             <TextField
                                 id="subject"
                                 name="subject"
@@ -111,6 +113,7 @@ export default function Contact() {
                                 }}
                                 onChange={handleChange}
                             />
+
                             <TextField
                                 id="message"
                                 name="message"
