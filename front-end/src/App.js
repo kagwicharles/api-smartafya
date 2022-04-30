@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import NavAppBar from './components/nav/NavAppBar'
 import CreateApplication from './pages/CreateApplication';
 import Login from './components/auth/Login'
+import ResetPassword from './components/auth/ResetPassword';
 import Register from './components/auth/Register'
 import PrivateRoute from './authentication/PrivateRoute'
 import { AuthProvider } from './authentication/AuthProvider';
@@ -45,6 +46,7 @@ export default function App() {
               </PrivateRoute>
             } />
             <Route exact path="/login" element={<Login />} />
+            <Route exact path="/reset" element={<ResetPassword />} />
             <Route exact path="/register" element={<Register />} />
           </Routes>
         </AuthProvider>

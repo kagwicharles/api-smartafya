@@ -83,6 +83,7 @@ export default function Login() {
                             id="email"
                             label="Email"
                             name="email"
+                            type="email"
                             onChange={(e) => setEmail(e.target.value)}
                             autoComplete="email"
                             autoFocus
@@ -111,7 +112,7 @@ export default function Login() {
                         }
                         <Grid container>
                             <Grid item xs>
-                                <Link href="#" variant="body2">
+                                <Link href="/reset" variant="body2">
                                     Forgot password?
                                 </Link>
                             </Grid>

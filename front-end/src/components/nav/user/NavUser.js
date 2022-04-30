@@ -6,10 +6,10 @@ const LoggedOut = () => {
         <Box>
             <Button
                 variant='contained'
-                color='success'
                 href="/login"
                 className='m-1'
                 sx={{
+                    backgroundColor: "#00BFBA",
                     ':hover': {
                         color: '#fff',
                     }

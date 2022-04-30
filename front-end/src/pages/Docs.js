@@ -1,6 +1,6 @@
 import { Grid, Typography, Box } from '@mui/material'
 import { Icon } from '@iconify/react'
-import { Link, Fade, Stack } from '@mui/material'
+import { Link, Fade } from '@mui/material'
 import JSONPretty from 'react-json-pretty';
 
 import '../static/css/docs.css'

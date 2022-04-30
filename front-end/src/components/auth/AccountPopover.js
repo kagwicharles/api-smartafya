@@ -4,9 +4,13 @@ import homeFill from '@iconify/icons-eva/home-fill';
 import personFill from '@iconify/icons-eva/person-fill';
 import settings2Fill from '@iconify/icons-eva/settings-2-fill';
 import { Link as RouterLink } from 'react-router-dom';
-
 import { alpha } from '@mui/material/styles';
-import { Button, Box, Divider, MenuItem, Typography, Avatar, IconButton } from '@mui/material';
+import {
+    Button, Box,
+    Divider, MenuItem,
+    Typography, Avatar,
+    IconButton, Stack
+} from '@mui/material';
 
 import MenuPopover from './MenuPopover';
 import { logout } from '../../authentication/firebase'

@@ -1,4 +1,4 @@
-import { Grid, Fade } from "@mui/material"
+import { Fade, Grid } from "@mui/material"
 import { LoggedOut, LoggedIn } from "./NavUser"
 
 import { useUserAuth } from "../../../authentication/AuthProvider";
@@ -7,11 +7,10 @@ const DisplayUser = () => {
     const { user } = useUserAuth();
 
     return (
-        < Grid className=''
-            item xs={12} sm={2}
+        < Grid lg={2}
             sx={{
                 display: "flex",
-                justifyContent: "flex-end",
+                justifyContent: "center",
                 flexDirection: "row"
             }
             }>
