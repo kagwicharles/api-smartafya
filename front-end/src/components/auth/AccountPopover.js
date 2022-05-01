@@ -81,7 +81,7 @@ export default function AccountPopover() {
                 }}
             >
                 <Avatar
-                    sx={{ bgcolor: "#2E7D32" }}
+                    sx={{ bgcolor: "#00BFBA" }}
                     alt="photoURL">{avatarChar}</Avatar>
             </IconButton>
 
