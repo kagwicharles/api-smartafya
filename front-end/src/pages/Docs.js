@@ -40,7 +40,7 @@ export default function Docs() {
                             align='left'
                             sx={{
                                 marginLeft: '20px',
-                                fontFamily: "RobotoBlack"
+                                fontFamily: "MulishBlack"
                             }}
                         >
                             Documentation
@@ -88,7 +88,7 @@ export default function Docs() {
                                 <Grid item lg={7} >
                                     <Typography id='get-started' variant='h5'
                                         align='left' className='title-content'
-                                        sx={{ fontFamily: "RobotoBlack" }}>
+                                        sx={{ fontFamily: "MulishBlack" }}>
                                         Get Started
                                     </Typography>
                                     <p style={{ textAlign: 'left', paddingTop: '20px' }}>
@@ -126,7 +126,7 @@ export default function Docs() {
                                     <Typography id='predict-xray' variant='h5' align='left' className='title-content'
                                         style={{
                                             marginTop: '40px',
-                                            fontFamily: "RobotoBlack"
+                                            fontFamily: "MulishBlack"
                                         }}
                                     >
                                         Predict X-ray/Microscopic cells
@@ -228,7 +228,7 @@ export default function Docs() {
                                     <Typography id='error' variant='h5' align='left' className='title-content'
                                         style={{
                                             marginTop: '40px',
-                                            fontFamily: "RobotoBlack"
+                                            fontFamily: "MulishBlack"
                                         }}
                                     >
                                         Errors

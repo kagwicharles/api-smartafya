@@ -21,7 +21,7 @@ export default function Home() {
 
     return (
         <div style={{
-            backgroundColor: "#fff",
+            backgroundColor: "#fafafa",
             backgroundSize: "cover",
         }}>
             <DemoDialog open={open} onClose={handleClose} />
@@ -31,7 +31,7 @@ export default function Home() {
                     <Grid item xs={12} lg={6} sm={6} md={4}>
                         <Stack spacing={2} justifyContent='center'>
                             <h1 align='left'
-                                style={{ fontFamily: "RobotoBlack" }}>
+                                style={{ fontFamily: "MulishBlack" }}>
                                 Accurate predictions for Malaria and Pneumonia diseases.
                             </h1>
                             <Typography variant="p"
