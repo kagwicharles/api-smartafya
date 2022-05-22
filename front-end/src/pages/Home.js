@@ -20,7 +20,7 @@ export default function Home() {
     };
 
     return (
-        <div style={{
+        <div className='' style={{
             backgroundColor: "#fafafa",
             backgroundSize: "cover",
         }}>
@@ -38,7 +38,7 @@ export default function Home() {
                                 align='left'
                                 style={{
                                     maxWidth: "450px",
-                                    textOverflow: "ellipsis"
+                                    textOverflow: "ellipsis",
                                 }}>
                                 Our APIs are designed to scale and are available on request by client applications.
                                 All you need to do is send an image to our service.

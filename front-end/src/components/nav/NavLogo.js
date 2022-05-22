@@ -8,10 +8,10 @@ const smartAfyaLogo = (
         <Typography
             variant="h4"
             style={{ 
-                fontFamily: "Roboto",
                 fontWeight: "bold",
+                fontFamily: "MulishBlack",
              color: "#fafafa" }}>
-            Smart afya
+            Smart Afya
         </Typography>
     </NavLink>
 );

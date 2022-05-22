@@ -26,11 +26,13 @@ const getDrawerChoices = () => {
 
 const displayDesktop = () => {
     return (
-        <Toolbar className='toolbar'>
-            {smartAfyaLogo}
-            <div className="menu-btn">{getMenuButtons()}</div>
-            <DisplayUser />
-        </Toolbar>
+        <div className=''>
+            <Toolbar className='toolbar'>
+                {smartAfyaLogo}
+                <div className="menu-btn">{getMenuButtons()}</div>
+                <DisplayUser />
+            </Toolbar>
+        </div>
     );
 };
 
