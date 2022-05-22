@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff50c2b3.css",
-    "main.js": "/static/js/main.0a05458f.js",
+    "main.css": "/static/css/main.e82447b5.css",
+    "main.js": "/static/js/main.21403304.js",
     "static/js/787.6d65ddc4.chunk.js": "/static/js/787.6d65ddc4.chunk.js",
     "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7429a63c09f79a1760b0.ttf",
     "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Roboto-Black.ttf": "/static/media/Roboto-Black.2a4285847db4a9acb97f.ttf",
-    "static/media/Mulish-Black.ttf": "/static/media/Mulish-Black.5f9844242373069538e7.ttf",
+    "static/media/Mulish-Medium.ttf": "/static/media/Mulish-Medium.dd646491799545c3e334.ttf",
+    "static/media/Mulish-ExtraBold.ttf": "/static/media/Mulish-ExtraBold.b6e65dfc31587f1f4419.ttf",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.376ea5d93f71583052f6.woff",
     "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.4673b4537a84c7f7a130.woff2",
     "static/media/roboto-cyrillic-ext-400-normal.woff2": "/static/media/roboto-cyrillic-ext-400-normal.493afe7ae8ecfe268800.woff2",
@@ -19,12 +20,12 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.bb723e8458c9c653e505.woff2",
     "index.html": "/index.html",
     "static/media/blob2.svg": "/static/media/blob2.fcae8db28105e3f04f8a.svg",
-    "main.ff50c2b3.css.map": "/static/css/main.ff50c2b3.css.map",
-    "main.0a05458f.js.map": "/static/js/main.0a05458f.js.map",
+    "main.e82447b5.css.map": "/static/css/main.e82447b5.css.map",
+    "main.21403304.js.map": "/static/js/main.21403304.js.map",
     "787.6d65ddc4.chunk.js.map": "/static/js/787.6d65ddc4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff50c2b3.css",
-    "static/js/main.0a05458f.js"
+    "static/css/main.e82447b5.css",
+    "static/js/main.21403304.js"
   ]
 }

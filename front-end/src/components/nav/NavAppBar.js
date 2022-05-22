@@ -33,7 +33,7 @@ export default function NavAppBar() {
     return (
         <header className='header'
             style={{
-                fontFamily: "MulishBlack",
+                fontWeight: "bold"
             }}>
                 <AppBar position="fixed"
                     className="app-bar"

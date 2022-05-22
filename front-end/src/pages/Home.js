@@ -25,7 +25,6 @@ export default function Home() {
             backgroundSize: "cover",
         }}>
             <DemoDialog open={open} onClose={handleClose} />
-            <Slide direction='up' in={true} timeout={1000}>
                 <Grid container
                     className='container fill-height align-items-center'>
                     <Grid item xs={12} lg={6} sm={6} md={4}>
@@ -72,7 +71,6 @@ export default function Home() {
                             src={MediLogo} alt="Medi Logo" />
                     </Grid>
                 </Grid>
-            </Slide>
         </div>
     )
 }

@@ -22,7 +22,7 @@ const LoggedOut = () => {
                 className='m-1'
                 href="/register"
                 disableElevation={true}
-                color="primary"
+                color="secondary"
                 sx={{
                     ':hover': {
                         color: "white",

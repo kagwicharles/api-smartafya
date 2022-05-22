@@ -7,11 +7,11 @@ const smartAfyaLogo = (
         underline="none">
         <Typography
             variant="h4"
-            style={{ 
+            style={{
                 fontWeight: "bold",
-                fontFamily: "MulishBlack",
-             color: "#fafafa" }}>
-            Smart Afya
+                color: "#fff"
+            }}>
+            Health+
         </Typography>
     </NavLink>
 );

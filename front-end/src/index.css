@@ -1,6 +1,6 @@
 body {
   background-color: "#fafafa";
-  font-family: "Roboto";
+  font-family: "MulishLight";
 }
 
 code {
@@ -32,7 +32,14 @@ code {
 @font-face {
   font-family: "MulishBlack";
   src: local("MulishBlack"),
-    url("./fonts/Mulish/Mulish-Black.ttf") format("truetype");
+    url("./fonts/Mulish/Mulish-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MulishLight";
+  src: local("MulishLight"),
+    url("./fonts/Mulish/Mulish-Medium.ttf") format("truetype");
   font-weight: normal;
 }
 
