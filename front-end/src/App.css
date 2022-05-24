@@ -34,22 +34,6 @@
   display: none;
 }
 
-.font-face-roboto {
-  font-family: "RobotoRegular";
-}
-
-.font-face-robotoB {
-  font-family: "RobotoMedium";
-}
-
-.font-face-roboto-black {
-  font-family: "RobotoBlack";
-}
-
-.font-face-mulish-black {
-  font-family: "MulishBlack";
-}
-
 #password-match {
   display: none;
 }

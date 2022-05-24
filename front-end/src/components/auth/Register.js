@@ -73,7 +73,7 @@ export default function Register() {
 
       <Stack sx={{ boxShadow: 3, padding: 8 }}>
         <div>
-          <h1 style={{ fontFamily: "RobotoBlack" }}
+          <h1 style={{ fontFamily: "NotoSansBold" }}
             align='left'>
             Create an Account
           </h1>

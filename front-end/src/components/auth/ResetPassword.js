@@ -66,7 +66,7 @@ export default function ResetPassword() {
                         <Typography
                             sx={{
                                 alignSelf: "flex-start",
-                                fontFamily: "RobotoBlack"
+                                fontFamily: "NotoSansBold"
                             }}
                             variant="h4"
                             align='left'>
@@ -135,7 +135,7 @@ export default function ResetPassword() {
                         color="success"
                         style={{ fontSize: 100 }}
                     />
-                    <h2 style={{ fontFamily: "RobotoBlack" }}>
+                    <h2 style={{ fontFamily: "NotoSansBold" }}>
                         Please check your e-mail
                     </h2>
                 </Stack>}

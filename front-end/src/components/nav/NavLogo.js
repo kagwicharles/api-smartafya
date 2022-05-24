@@ -9,9 +9,10 @@ const smartAfyaLogo = (
             variant="h4"
             style={{
                 fontWeight: "bold",
+                fontFamily: "NotoSansBold",
                 color: "#fff"
             }}>
-            Health+
+            Smart Afya
         </Typography>
     </NavLink>
 );

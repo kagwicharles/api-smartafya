@@ -74,7 +74,7 @@ export default function Contact() {
                     <h2
                         style={{
                             marginTop: '50px',
-                            fontFamily: "MulishBlack"
+                            fontFamily: "NotoSansBold"
                         }}
                         align="left">Get In Touch</h2>
                     <Grow in={true} timeout={1000}>

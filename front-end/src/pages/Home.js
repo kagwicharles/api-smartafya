@@ -30,7 +30,7 @@ export default function Home() {
                     <Grid item xs={12} lg={6} sm={6} md={4}>
                         <Stack spacing={2} justifyContent='center'>
                             <h1 align='left'
-                                style={{ fontFamily: "MulishBlack" }}>
+                                style={{ fontFamily: "NotoSansBold" }}>
                                 Accurate predictions for Malaria and Pneumonia diseases.
                             </h1>
                             <Typography variant="p"

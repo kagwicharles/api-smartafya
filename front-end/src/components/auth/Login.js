@@ -61,7 +61,7 @@ export default function Login() {
                     <Typography
                         sx={{
                             alignSelf: "flex-start",
-                            fontFamily: "RobotoBlack"
+                            fontFamily: "NotoSansBold"
                         }}
                         variant="h4"
                         align='left'>

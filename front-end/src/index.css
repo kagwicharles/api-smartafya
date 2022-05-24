@@ -1,6 +1,6 @@
 body {
   background-color: "#fafafa";
-  font-family: "MulishLight";
+  font-family: "NotoSansRegular";
 }
 
 code {
@@ -9,38 +9,13 @@ code {
 }
 
 @font-face {
-  font-family: "RobotoRegular";
-  src: local("RobotoRegular"),
-    url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'NotoSansRegular';
+  src: local('NotoSansRegular'), url("fonts/Noto_Sans/NotoSans-Regular.ttf") format('truetype');
 }
 
 @font-face {
-  font-family: "RobotoBlack";
-  src: local("RobotoBlack"),
-    url("./fonts/Roboto/Roboto-Black.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "RobotoMedium";
-  src: local("RobotoMedium"),
-    url("./fonts/Roboto/Roboto-Medium.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "MulishBlack";
-  src: local("MulishBlack"),
-    url("./fonts/Mulish/Mulish-ExtraBold.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "MulishLight";
-  src: local("MulishLight"),
-    url("./fonts/Mulish/Mulish-Medium.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'NotoSansBold';
+  src: local('NotoSansBold'), url("fonts/Noto_Sans/NotoSans-Bold.ttf") format('truetype');
 }
 
 #btnContainer .active {

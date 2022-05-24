@@ -12,8 +12,8 @@ import './index.css'
 
 WebFont.load({
   custom: {
-    families: ['RobotoRegular', 'RobotoBlack',
-      'RobotoMedium', 'MulishBlack'],
+    families: ['RobotoRegular', 'NotoSansBold',
+      'RobotoMedium', 'NotoSansBold'],
   },
 });
 
