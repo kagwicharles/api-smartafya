@@ -5,7 +5,8 @@
 }
 
 .ripple:hover {
-    border-bottom: 3px solid #6D767E;
+    font-weight: bold;
+    border-bottom: 3px solid #D9E2EF;
     transition: all ease-in-out .2s;
 }
 

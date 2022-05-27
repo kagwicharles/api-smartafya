@@ -21,7 +21,6 @@ export default function Home() {
 
     return (
         <div className='' style={{
-            backgroundColor: "#fafafa",
             backgroundSize: "cover",
         }}>
             <DemoDialog open={open} onClose={handleClose} />
