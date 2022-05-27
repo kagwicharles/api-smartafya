@@ -7,6 +7,7 @@ import smartAfyaLogo from './NavLogo'
 import getMenuButtons from './MenuOptions';
 import DisplayUser from './user/DisplayUser';
 import headersData from './HeaderData';
+import { color } from '@mui/system';
 
 const getDrawerChoices = () => {
     return headersData.map(({ label, href }) => {
@@ -15,7 +16,6 @@ const getDrawerChoices = () => {
                 {...{
                     to: href,
                     key: label,
-                    color: "inherit",
                 }}
             >
                 <MenuItem>{label}</MenuItem>

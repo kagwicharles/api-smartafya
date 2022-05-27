@@ -35,14 +35,14 @@ export default function NavAppBar() {
             style={{
                 fontWeight: "bold"
             }}>
-                <AppBar position="fixed"
-                    className="app-bar"
-                    color="primary"
-                    elevation={2}
-                >
-                    {mobileView ? <DisplayMobile /> : displayDesktop()}
-                </AppBar >
-                <Toolbar />
+            <AppBar position="fixed"
+                className="app-bar"
+                elevation={0}
+                sx={{ backgroundColor: "#FAFAFA" }}
+            >
+                {mobileView ? <DisplayMobile /> : displayDesktop()}
+            </AppBar >
+            <Toolbar />
         </header>
     );
 };

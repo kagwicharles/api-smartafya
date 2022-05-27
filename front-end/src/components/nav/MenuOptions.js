@@ -7,7 +7,7 @@ const getMenuButtons = () => {
     return headersData.map(({ label, href }) => {
         return (
             <Box id="btnContainer">
-                <NavLink className="nav-link ripple text-light px-1"
+                <NavLink className="nav-link ripple text-muted px-1"
                     {...{
                         key: label,
                         to: href,

@@ -8,9 +8,12 @@ const smartAfyaLogo = (
         <Typography
             variant="h4"
             style={{
-                fontWeight: "bold",
                 fontFamily: "NotoSansBold",
-                color: "#fff"
+                fontWeight: "bold",
+                color: "#1976D2",
+                '&:hover': {
+                    color: "#1976D2"
+                }
             }}>
             Smart Afya
         </Typography>

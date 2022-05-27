@@ -9,8 +9,9 @@ const LoggedOut = () => {
                 href="/login"
                 className='m-1'
                 sx={{
-                    backgroundColor: "#00BFBA",
+                    backgroundColor: "#1976D2",
                     ':hover': {
+                        backgroundColor: "#1976D2",
                         color: '#fff',
                     }
                 }}
@@ -22,7 +23,7 @@ const LoggedOut = () => {
                 className='m-1'
                 href="/register"
                 disableElevation={true}
-                color="secondary"
+                color="success"
                 sx={{
                     ':hover': {
                         color: "white",
