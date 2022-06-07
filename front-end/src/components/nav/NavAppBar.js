@@ -37,8 +37,9 @@ export default function NavAppBar() {
             }}>
             <AppBar position="fixed"
                 className="app-bar"
-                elevation={0}
-                sx={{ backgroundColor: "#fff", borderBottom: "1px solid #D9E2EF" }}
+                elevation={2}
+                color="success"
+                // sx={{ borderBottom: "1px solid #D9E2EF" }}
             >
                 {mobileView ? <DisplayMobile /> : displayDesktop()}
             </AppBar >

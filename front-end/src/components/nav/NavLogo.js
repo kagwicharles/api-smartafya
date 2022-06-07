@@ -10,10 +10,7 @@ const smartAfyaLogo = (
             style={{
                 fontFamily: "NotoSansBold",
                 fontWeight: "bold",
-                color: "#1976D2",
-                '&:hover': {
-                    color: "#1976D2"
-                }
+                color: "#fafafa",
             }}>
             Smart Afya
         </Typography>
